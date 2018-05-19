@@ -9,8 +9,8 @@ namespace BibTexUrlFixer
 {
     internal class Program
     {
-        private static readonly string OldIdentifier = "url = ";
-        private static readonly string NewIdentifyer = "note = ";
+        private const string OldIdentifier = "url = ";
+        private const string NewIdentifyer = "note = ";
         private static readonly Regex BibtexEntryRegex = new Regex(@"(@.*{(.*|\s)*?(}\s))", RegexOptions.Multiline);
         public static void Main(string[] args)
         {
